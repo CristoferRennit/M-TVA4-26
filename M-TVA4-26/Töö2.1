@@ -1,0 +1,27 @@
+#1 Juku
+eesnimi=input("Sisesta oma eesnimi: ")
+if eesnimi.lower() == "juku":
+    print("Lähme Jukuga kinno!")
+    if eesnimi.isupper():
+        print("Ära karju, Juku1")
+
+else:
+    print("Täna kinno ei minda.")
+vanus = input("Sisesta oma vanus:")
+if not vanus.isdigit():
+    print("Palun sisesta kehtiv vanus täisarvuna.")
+else:
+    vanus = int(vanus)
+if vanus < 0 or vanus > 100:
+    print("Viga andmetes, vanus peab olema 0 kuni 100")
+elif vanus < 6:
+    print("Pilet on tasuta.")
+elif vanus <= 14:
+    print("Lastepilet")
+elif vanus <= 65:
+    print("Täispilet")
+elif vanus > 65:
+    print("Sooduspilet")
+
+else:
+    print("Täna kinno ei minda.")
